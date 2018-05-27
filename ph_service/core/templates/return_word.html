@@ -1,0 +1,9 @@
+{% if word %}
+Ваше слово: {{word}}
+{% endif %}
+<form action="/return_word" method="post">
+    {% csrf_token %}
+    <textarea name="word" cols="10" rows="1"></textarea>
+    <br>
+    <input type="submit" class="button" value="Перевернуть слово">
+</form>
