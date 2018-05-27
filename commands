@@ -1,0 +1,4 @@
+django-admin startproject ph_service #создали проект
+python3 manage.py
+python3 manage.py runserver #запуск
+
